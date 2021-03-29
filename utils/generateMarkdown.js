@@ -15,7 +15,7 @@ function generateMarkdown(data, githubInfo) {
   return `
   # **${data.title}**
 
-      ${data.badge}
+      ${data.license}
 
 
 
@@ -43,9 +43,9 @@ function generateMarkdown(data, githubInfo) {
 
 ${data.usage}
 
-## Licence
+## License
 
-${data.licence}
+${data.license}
 
 ## Contributors
 
@@ -60,12 +60,12 @@ ${data.test}
 
 - [Project Repo](${data.repo})
 
-## GitHub
+## Questions
 
 ![Image of me](${githubInfo.githubImage})
-- ${githubInfo.name}
+- [Profile Name](${githubInfo.name})
 - [GitHub Profile](${githubInfo.profile})
-- <${githubInfo.email}>
+- [Email]](${data.email})
 
 
 

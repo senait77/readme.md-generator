@@ -1,7 +1,9 @@
 
-  # **gfkhg**
+  # **README-Generator**
 
-      hdkhgdkhg
+      [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+,[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 
 
 
@@ -18,40 +20,42 @@
 
 ## Description 
 
-   gfkhgfkhgf
+   These is a readme Generator that dynammically helps you generate readme and saves you tones of time.
 
 
 ## Installation
 
-    hfkhgfkhgf
+    first you need to creat a new repository in gitHub and clone it to your local machine .
 
 ## Usage
 
 undefined
 
-## Licence
+## License
 
-jhrasfg
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+,[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 
 ## Contributors
 
-354bjhfj
+There will be future contrubting parties
 
 ## Test
 
-ghhk
+There will be future Testing.
 
 
 ## Repository
 
 - [Project Repo](https://github.com/senait77)
 
-## GitHub
+## Questions
 
 ![Image of me](https://avatars.githubusercontent.com/u/77768986?v=4)
-- Senait
+- [Profile Name](Senait)
 - [GitHub Profile](https://github.com/senait77)
-- <null>
+- [Email]](senutekie77@gmail.com)
 
 
 

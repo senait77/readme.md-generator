@@ -7,93 +7,132 @@ const generate = require('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
 const questions = [{
-    type: "input",
-    name: "title",
-    message: "What is your project title?",
-    validate: nameInput => {
-        if (nameInput) {
-          return true;
-        } else {
-          console.log('You need to enter a project name!');
-          return false;
-        }
-      }
+                type: "input",
+                name: "title",
+                message: "What is your project title?",
+                validate: nameInput => {
+                    if (nameInput) {
+                    return true;
+                    } else {
+                    console.log('You need to enter a project name!');
+                    return false;
+                    }
+                }
 
-},
-{
-    type: "input",
-    name: "badge",
-    message: "Please provide the badges links that you want"
-},
-{
-    type: "input",
-    name: "description",
-    message: "Please provide your project's description",
-    validate: descriptionInput => {
-        if (descriptionInput) {
-          return true;
-        } else {
-          console.log('You need to enter a project description!');
-          return false;
-        }
-      }
-},
-{
-    type: "input",
-    name: "installation",
-    message: "Please provide the installation instructions",
-    validate: descriptionInput => {
-          if (descriptionInput) {
-            return true;
-          } else {
-            console.log('You need to enter a project description!');
-            return false;
-          }
-        }
-},
-{
-    type: "input",
-    name: "languages",
-    message: 'What did you this project with? (Check all that apply).',
-    choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Node'],
+            },
+            // {
+            //     type: "input",
+            //     name: "badge",
+            //     message: "Please provide the badges links that you want"
+            // },
+            {
+                type: "input",
+                name: "description",
+                message: "Please provide your project's description",
+                validate: descriptionInput => {
+                    if (descriptionInput) {
+                    return true;
+                    } else {
+                    console.log('You need to enter a project description!');
+                    return false;
+                    }
+                }
+            },
+            {
+                type: "input",
+                name: "installation",
+                message: "Please provide the installation instructions",
+                validate: descriptionInput => {
+                    if (descriptionInput) {
+                        return true;
+                    } else {
+                        console.log('You need to enter a project description!');
+                        return false;
+                    }
+                    }
+            },
+            {
+                type: "checkbox",
+                name: "languages",
+                message: 'What technologies did you use for your project? (Check all that apply).',
+                choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Node'],
+                validate: languagesInput => {
+                    if (languagesInput) {
+                        return true;
+                    } else {
+                        console.log('please choose your technologies used!');
+                        return false;
+                    }
+                }
 
-},
-{
-    type: "input",
-    name: "licence",
-    message: "Please provide the project licence or your badge link",
-    //choices:['![MIT](/apm/l/:packageName)','![Apache](/aur/license/:packageName)', '![GPL](/eclipse-marketplace/l/:name)','![Apache 2](/hexpm/l/:packageName)']
-},
-{
-    type: "input",
-    name: "contributing",
-    message: "Please provide the contributing parties"
-},
-{
-    type: "input",
-    name: "test",
-    message: "Please provide the project tests"
-},
+            },
+            {
+                type: "checkbox",
+                name: "license",
+                message: "Please provide the project licence or your badge link",
+                choices:['[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n', '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)\n','[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)\n', '[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)'],
+                validate: licenseInput => {
+                    if (licenseInput) {
+                        return true;
+                    } else {
+                        console.log('Please choose your licence!');
+                        return false;
+                    }
+                }
+            },
+            {
+                type: "input",
+                name: "contributing",
+                message: "Please provide the contributing parties"
+            },
+            {
+                type: "input",
+                name: "test",
+                message: "Please provide the project tests"
+            },
 
-{
-    type: "input",
-    name: "repo",
-    message: "Enter your gitHub link to your project. (Required).",
-    validate: linkInput => {
-        if (linkInput) {
-            return true;
-        } else {
-            console.log('You nedd to enter a project GitHub link!');
-            return false;
-        }
-    }
-},
-{
-    type: "input",
-    name: "username",
-    message: "What is your github user name?",
-    
-},
+            {
+                type: "input",
+                name: "repo",
+                message: "Enter your gitHub link to your project. (Required).",
+                validate: linkInput => {
+                    if (linkInput) {
+                        return true;
+                    } else {
+                        console.log('You nedd to enter a project GitHub link!');
+                        return false;
+                    }
+                }
+            },
+            {
+                type: "input",
+                name: "username",
+                message: "What is your github user name?",
+                validate: usernameInput => {
+                    if (usernameInput) {
+                        return true;
+                    } else {
+                        console.log('You need to provide your username!');
+                        return false;
+                    }
+                }
+                
+            },
+            {
+                type: "input",
+                name: "email",
+                message: "What is your email adress?",
+                validate: emailInput => {
+                    if (emailInput) {
+                        return true;
+                    } else {
+                        console.log('You nedd to enter your email adress!');
+                        return false;
+                    }
+                }
+                
+            }
+
 ];
 
 inquirer
@@ -104,9 +143,11 @@ inquirer
 
             const githubInfo = {
                 githubImage: res.data.avatar_url,
-                email: res.data.email,
+                name: res.data.name,
                 profile: res.data.html_url,
-                name: res.data.name
+                email: res.data.email,
+               
+                
             };
 
             fs.writeFile('README.md', generate(data, githubInfo), err =>{

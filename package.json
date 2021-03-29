@@ -9,6 +9,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senait77/readme.md-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/senait77/readme.md-generator/issues"
+  },
+  "homepage": "https://github.com/senait77/readme.md-generator#readme"
 }

@@ -1,8 +1,8 @@
 
-  # **README-Generator**
+  # **README-Genrator**
 
-      [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-,[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+      [![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+,[![License: ligihblue](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
 
 
@@ -20,12 +20,12 @@
 
 ## Description 
 
-   These is a readme Generator that dynammically helps you generate readme and saves you tones of time.
+   These is a readme generator that dynamically generates readme and saves you tones of time
 
 
 ## Installation
 
-    first you need to creat a new repository in gitHub and clone it to your local machine .
+    first create a new repository in your github app and clone it to your local machine.
 
 ## Usage
 
@@ -33,17 +33,17 @@ undefined
 
 ## License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-,[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+,[![License: ligihblue](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
 
 ## Contributors
 
-There will be future contrubting parties
+There will be future contrubuting
 
 ## Test
 
-There will be future Testing.
+There will be future testing.
 
 
 ## Repository

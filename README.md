@@ -3,7 +3,7 @@
 
   # Licese
   
-  [![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of contents
 
@@ -23,7 +23,7 @@
 
 ## Installation
 
-    To run these project on the development enviroment, first you need to create a new repository in your githib account and clone it to your local machine using <git clone ssh keys> and then in local machine use <mkdir> to create a new folder and <touch> to create new file in your command line. After you are done working on your branch  use <git add> <git commit> <git push> to your repo.open Now your project is locally saved in my computer and remotely saved on my GitHub.
+    To run these project on the development enviroment, first you need to create a new repository in your githib account and clone it to your local machine using "git clone ssh keys> and then in local machine use "mkdir" to create a new folder and "touch" to create new file in your command line. After you are done working on your branch  use "git add" "git commit" "git push" to your repo.open Now your project is locally saved in my computer and remotely saved on my GitHub.
 
 ## Usage
 
@@ -31,16 +31,16 @@ JavaScript,ES6,jQuery,Node
 
 ## License
 
-[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Contributors
 
-There will be future contrubution
+There will be future contrbutions.
 
 ## Test
 
-
+https://drive.google.com/file/d/1tT2htE9QQQg9iAijgh5V92azbj_sbd3K/view
 
 
 ## Repository

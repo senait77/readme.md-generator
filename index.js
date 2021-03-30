@@ -42,28 +42,21 @@ const questions = [{
                 type: "input",
                 name: "installation",
                 message: "Please provide the installation instructions",
-                validate: descriptionInput => {
-                    if (descriptionInput) {
+                validate: installationInput => {
+                    if (installationInput) {
                         return true;
                     } else {
-                        console.log('You need to enter a project description!');
+                        console.log('You need to enter a project installation');
                         return false;
                     }
                     }
             },
             {
                 type: "checkbox",
-                name: "languages",
+                name: "usage",
                 message: 'What technologies did you use for your project? (Check all that apply).',
                 choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Node'],
-                validate: languagesInput => {
-                    if (languagesInput) {
-                        return true;
-                    } else {
-                        console.log('please choose your technologies used!');
-                        return false;
-                    }
-                }
+                
 
             },
             {
@@ -71,14 +64,7 @@ const questions = [{
                 name: "license",
                 message: "Please provide the project licence or your badge link",
                 choices:['[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)\n', '[![License: ligihblue](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)\n', '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n',  '[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)'],
-                validate: licenseInput => {
-                    if (licenseInput) {
-                        return true;
-                    } else {
-                        console.log('Please choose your licence!');
-                        return false;
-                    }
-                }
+                
             },
             {
                 type: "input",
@@ -88,7 +74,8 @@ const questions = [{
             {
                 type: "input",
                 name: "test",
-                message: "Please provide the project tests"
+                message: "Please provide your project walkthrough?"
+                
             },
 
             {

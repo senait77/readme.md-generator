@@ -15,10 +15,9 @@ function generateMarkdown(data, githubInfo) {
   return `
   # **${data.title}**
 
-      ${data.license}
-
-
-
+  # Licese
+  
+  ${data.license}
 ## Table of contents
 
 - [Description](#Description)

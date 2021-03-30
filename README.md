@@ -1,5 +1,5 @@
 
-  # **README-Generator**
+  # **README-Genrator**
 
   # Licese
   
@@ -40,7 +40,7 @@ There will be future contrbutions.
 
 ## Test
 
-https://drive.google.com/file/d/1tT2htE9QQQg9iAijgh5V92azbj_sbd3K/view
+https://www.youtube.com/watch?v=MWzZFhcKEwc
 
 
 ## Repository
